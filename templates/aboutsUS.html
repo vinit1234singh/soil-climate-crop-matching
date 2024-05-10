@@ -1,0 +1,226 @@
+{% extends 'layout.html' %} {% block body %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap%27" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <title> AboutUs</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #c1d5a4;
+    }
+
+    #title {
+      color: black;
+      padding: 1% 15%;
+    }
+
+    /* #navbarSupportedContent {
+    text-align: right;
+    padding: 20px;
+  }
+  .nav-item {
+    padding: 0 18px;
+    color: black;
+  }
+  .navbar {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  nav{
+    background-color: #ffc107;
+  }
+   */
+    #main-heading {
+      font-size: 4rem;
+    }
+
+    .heading {
+      font-size: 1.2rem;
+    }
+
+    #our-services {
+      padding: 0% 15%;
+    }
+
+    #services {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .services-item {
+      padding: 5% 7%;
+      margin: 4% 3%;
+      background: #ffffff;
+      box-shadow: 5px 10px 10px rgb(0, 255, 179);
+    }
+
+    #team {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #our-team {
+      margin: 5%;
+    }
+
+    .team-members {
+      padding: 4% 4%;
+      margin: 1% 1%;
+      background: #ffffff;
+      
+    }
+
+    .team-members img {
+      height: 300px;
+      box-shadow: 5px 10px 10px rgb(0, 255, 179);
+    }
+
+    .footer {
+
+      width: 100%;
+      margin-bottom: 0%;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .emerg-footer {
+      height: 20px;
+      background-color: rgb(14, 246, 122);
+      text-align: center;
+      color: white;
+    }
+
+    .cpry-footer {
+      text-align: center;
+      background-color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Title section -->
+  <section id="title">
+    <!-- nav Bar -->
+
+    <!-- Title -->
+    <div class="row">
+      <div class="palmpicture">
+        <!-- <img src="images/logo-main.jpeg" alt="HMS Logo" height="25%" width="25%"> -->
+      </div>
+      <div class="heading my-3">
+        <h1 id="main-heading" class="fw-bold my-3">About Us</h1>
+        <p class="my-3">We use state-of-the-art machine learning and deep learning technologies to help you guide through the entire farming process. Make informed decisions to understand the demographics of your area, understand the factors that affect your crop and keep them healthy for a super awesome successful yield.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  </div>
+  <section id="our-services">
+    <h2>Our Services</h2>
+    <div id="services">
+      <div id="left" class="services-item">
+        <img src='/static/images/crop1.jpg' alt="Doctor Icon" height="200">
+        <h3> Crop </h3>
+        <p>
+          Recommendation about the type of crops to be cultivated which is best suited
+							for the respective conditions
+        </p>
+      </div>
+      <div id="right" class="services-item">
+        <img src='/static/images/fert.jpg' alt="Appointment Icon" height="200">
+        <h3>Fertilizer</h3>
+        <p>
+          Recommendation about the type of fertilizer best suited for the particular soil
+							and the recommended crop
+        </p>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <section id="our-team">
+    <h2 class="my-3">Meet Our Team</h2>
+    <div id="team">
+      
+      <div id="keshav" class="team-members">
+        <img src='/static/images/20231101_164357.jpg'>
+        
+        <h5>VINIT KUMAR SINGH</h5>
+      </div>
+      <div id="ujjwal" class="team-members">
+        <img src='/static/images/chand.jpg'>
+        <h5>CHANDRAKANT KUMAR</h5>
+      </div>
+      <div id="vineet" class="team-members">
+        <img src='/static/images/6.jpg'>
+        <h5>KESHAV BALESARA</h5>
+      </div>
+      
+    </div>
+  </section>
+
+</body>
+
+
+</html>
+
+<script type="text/javascript">
+  function preview_image(event) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var output = document.getElementById('output-image')
+      output.src = reader.result;
+    }
+    reader.readAsDataURL(event.target.files[0]);
+  }
+</script>
+
+</div>
+{% endblock %}
